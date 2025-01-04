@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Agu+Display&family=Homemade+Apple&family=Rubik+Vinyl&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+  
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  margin: 0;
+
+}
+h1 {
+  font-family: "Homemade Apple";
+  color: #7b68ee;
+  margin-left: 160px;
+  text-shadow: 1px 1px #ff6b6b;
+}
+select {
+    width: 164px;
+}
+fieldset {
+    width: 480px; 
+}
+#f1 {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #ff6b6b;
+}
+#f2 {
+  background-color: #363636;
+  border-style: ridge;
+  border-color: #4CAF50 #ff6b6b #cc0898 #6495ED;
+  border-width: 2px;
+}
+label {
+  display: inline-block;
+  width: 120px;
+  color: #e0e0e0;
+}
+legend {
+  text-shadow: 1px 1px #ff6b6b;
+  font-size: 22px;
+  color: #9370db;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: -30px;
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#fname {
+  background-color: #2d2d2d;
+  border-color: #da70d6;
+  color: #e0e0e0;
+}
+#lname {
+  background-color: #8a5151;
+  border-color: #98fb98;
+  color: #e0e0e0;
+}
+#Age {
+  background-color: #2d2d2d;
+  border-color: #ffd700;
+  color: #e0e0e0;
+}
+#food {
+  background-color: #8a5151;
+  border-color: #98fb98;
+  color: #e0e0e0;
+}
+p {
+    margin-bottom: 1px;
+    margin-top: -3px;
+    color: rgb(89, 66, 183);
+}
+textarea {
+    background-image: url("./pic1.jpg");
+    width: 501px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: #ffa500;
+    color: #e0e0e0;
+}
+
+:root {
+  --m: 2rem;
+  --red: #ff6565;
+  --pink: #ff64f9;
+  --purple: #6b5fff;
+  --blue: #4d8aff;
+  --green: #5bff89;
+  --yellow: #ffee55;
+  --orange: #ff6d1b;
+}
+button {
+  margin-left: 190px;
+  border: 5px solid transparent;
+  position: relative;
+  font-family: 'Space Grotesk';
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 13px 26px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+ 
+  background:linear-gradient(#121213, #121213), linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),  linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+}
+
+button span {
+  background: linear-gradient(90deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--pink), var(--red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+}
+
+button::before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    var(--orange),
+    var(--yellow),
+    var(--green),
+    var(--blue),
+    var(--purple),
+    var(--pink),
+    var(--red)
+  );
+  height: 30%;
+  width: 60%;
+  position: absolute;
+  bottom: -20%;
+  z-index: -5;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+  filter: blur(calc(0.8 * var(--m)));
+}
+
+button:hover,
+button:hover::before {
+  animation: animate 0.5s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 1rem;
+  }
+}
+
+/* */
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 0 15px;  
+}
+
+/* Hat */
+
+.header {
+  padding: 5px 0;;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list a:hover {
+  color: red;  /* שינוי צבע לאדום */
+  transform: scale(1.5);  /* הגדלה ב-50% */
+  display: inline-block;  /* חשוב להוסיף בשביל שה-transform יעבוד */
+  transition: all 0.3s ease;  /* אנימציה חלקה */
+}
+
+
+.header__nav {
+
+}
+
+.header__list {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav a {
+  font-size: 14px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.header__nav a.active {
+  opacity: 1;
+}
+
+.header__nav a:hover {
+  opacity: 0.9;
+}
+
+
+
