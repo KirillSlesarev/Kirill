@@ -201,17 +201,16 @@ ul {
   align-items: center;
 }
 .header__list a:hover {
-  color: red;  /* שינוי צבע לאדום */
-  transform: scale(1.5);  /* הגדלה ב-50% */
-  display: inline-block;  /* חשוב להוסיף בשביל שה-transform יעבוד */
-  transition: all 0.3s ease;  /* אנימציה חלקה */
+  color: red;  
+  transform: scale(1.5); 
+  display: inline-block; 
+  transition: all 0.3s ease;  
 }
-
-
+/*
 .header__nav {
 
 }
-
+*/
 .header__list {
   display: flex;
   gap: 30px;
